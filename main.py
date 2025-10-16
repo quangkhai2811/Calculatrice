@@ -1,16 +1,31 @@
-# This is a sample Python script.
+class Calculatrice():
+    def __init__(self, nombre1, nombre1):
+        self.nombre1 = nombre1
+        self.nombre2 = nombre1
 
-# Press Maj+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+    def add(self):
+        return (self.nombre1 + self.nombre2)
+
+    def substract(self):
+        return (self.nombre1 - self.nombre2)
+
+    def multiply(self):
+        return 0
+
+    def divide(self):
+        return 0
+
+    def power(self ):
+        return 0
+
+    def fibonacci(self):
+        return 0
+
+    def prime(self):
+        return 0
+
+    def exponential(self):
+        return 0
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hjgi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
 
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
