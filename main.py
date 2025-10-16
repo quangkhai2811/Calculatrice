@@ -30,7 +30,7 @@ class Calculatrice():
 
     def power(self ):
         for _ in range (self.nombre2):
-            puissance = self.nombre1 
+            puissance = self.nombre1
 
         return 0
 
