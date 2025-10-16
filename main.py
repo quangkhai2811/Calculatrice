@@ -28,6 +28,8 @@ class Calculatrice():
     def divide(self):
         return False
 
+    def newDivided(self):
+        return True if self.divide() else False
 
 
 
