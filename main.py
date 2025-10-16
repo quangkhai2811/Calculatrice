@@ -15,24 +15,22 @@ class Calculatrice():
 
     def multiply(self):
        multplication = 1
-       for i in range (self.nombre2):
+       for _ in range (self.nombre2):
            multiplication = self.nombre1 + multiplication
 
         return (multiplication)
 
     def divide(self):
 
-        if self.nombre2 != 0:
-            return (self.nombre1/self.nombre2)
-        else:
-            print("Error")
+
 
 
 
 
 
     def power(self ):
-        puissance = self.nombre1 ** self.nombre2
+        for _ in range (self.nombre2):
+            puissance = self.nombre1 
 
         return 0
 
