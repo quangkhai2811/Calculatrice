@@ -16,14 +16,14 @@ class Calculatrice():
     def substract(self):
        soustraction = self.nombre1 - self.nombre2
 
-        return (soustraction)
+       return (soustraction)
 
     def multiply(self):
        multplication = 1
        for _ in range (self.nombre2):
            multiplication = self.nombre1 + multiplication
 
-        return (multiplication)
+       return (multiplication)
 
     def divide(self):
         return True
@@ -43,8 +43,7 @@ class Calculatrice():
         return 0
 
     def prime(self, nombre):
-        for i in range(sqrt(nombre))
-        return 0
+        pass
 
     def exponential(self):
         return 0
@@ -55,6 +54,8 @@ class Calculatrice():
         self.g.actualiser()
 
 machine = Calculatrice(1,2)
+print(machine.multiply())
+
 
 
 
