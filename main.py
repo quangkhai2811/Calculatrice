@@ -9,18 +9,36 @@ class Calculatrice():
         self.graphiqueInit()
 
     def add(self):
-        return (self.nombre1 + self.nombre2) * 0.5
+        addition = self.nombre1 + self.nombre2
+
+        return (addition)
 
     def substract(self):
-        return (self.nombre1 - self.nombre2)
+       soustraction = self.nombre1 - self.nombre2
+
+        return (soustraction)
 
     def multiply(self):
-        return 0
+       multplication = 1
+       for i in range (self.nombre2):
+           multiplication = self.nombre1 + multiplication
+
+        return (multiplication)
 
     def divide(self):
-        return 0
+
+        if self.nombre2 != 0:
+            return (self.nombre1/self.nombre2)
+        else:
+            print("Error")
+
+
+
+
 
     def power(self ):
+        puissance = self.nombre1 ** self.nombre2
+
         return 0
 
     def fibonacci(self):
