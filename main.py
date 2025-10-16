@@ -26,7 +26,7 @@ class Calculatrice():
         return (multiplication)
 
     def divide(self):
-        return False
+        return False test r
 
     def newDivided(self):
         return True if self.divide() else False
