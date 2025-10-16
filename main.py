@@ -6,7 +6,7 @@ class Calculatrice():
     def __init__(self, nombre1, nombre2):
         self.nombre1 = nombre1
         self.nombre2 = nombre1
-        self.graphiqueInit()
+        self.initialisationGraphique()
 
     def add(self):
         addition = self.nombre1 + self.nombre2
@@ -44,13 +44,20 @@ class Calculatrice():
     def fibonacci(self):
         return 0
 
-    def prime(self):
+    def prime(self, nombre):
+        for i in range(sqrt(nombre))
         return 0
 
     def exponential(self):
         return 0
 
-    def graphiqueInit(self):
-        g = ouvrirFenetre(800, 600)
-        g.dessinerRectangle()
+    def initialisationGraphique(self):
+        self.g = ouvrirFenetre(800, 600)
+
+        self.g.actualiser()
+
+machine = Calculatrice(1,2)
+
+
+
 
