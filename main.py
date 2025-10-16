@@ -26,7 +26,7 @@ class Calculatrice():
         return (multiplication)
 
     def divide(self):
-
+        return False
 
 
 
