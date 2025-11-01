@@ -15,6 +15,7 @@ class Calculatrice():
 
     def substract(self):
        soustraction = self.nombre1 - self.nombre2
+
        return (soustraction)
 
     def multiply(self):
@@ -42,19 +43,21 @@ class Calculatrice():
         return 0
 
     def prime(self, nombre):
-
-        return 0
+        pass
 
     def exponential(self):
         return 0
 
     def initialisationGraphique(self):
         self.g = ouvrirFenetre(800, 600)
+
         self.g.actualiser()
         self.g.attendreClic()
 
 
 machine = Calculatrice(1,2)
+print(machine.multiply())
+
 
 
 
