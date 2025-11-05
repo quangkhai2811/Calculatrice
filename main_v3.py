@@ -1,7 +1,5 @@
 from tkinter import *
 
-# --- Fonctions issues de ton code d’origine ---
-
 def add(a, b):
     addition = a + b
     return addition
@@ -92,7 +90,7 @@ def exponential(n):
     return f"{quotient}.{reste_str}"
 
 
-# --- Gestion des boutons Tkinter ---
+# Gestion des boutons Tkinter
 
 def button_press(num):
     global equation_text
@@ -190,7 +188,7 @@ def clear():
     equation_label.set("")
 
 
-# --- Interface Tkinter ---
+# Interface Tkinter
 window = Tk()
 window.title("Calculatrice sans eval() - complète")
 window.geometry("430x650")
@@ -209,7 +207,7 @@ label.pack(pady=10)
 frame = Frame(window)
 frame.pack()
 
-# --- Boutons chiffres ---
+# Boutons chiffres
 buttons = [
     (1,0,0), (2,0,1), (3,0,2),
     (4,1,0), (5,1,1), (6,1,2),
@@ -221,7 +219,7 @@ for (num, r, c) in buttons:
     Button(frame, text=str(num), height=3, width=7, font=20,
            command=lambda n=num: button_press(n)).grid(row=r, column=c)
 
-# --- Opérateurs ---
+# Opérateurs
 Button(frame, text="+", height=3, width=7, font=20,
        command=lambda: set_operator('+')).grid(row=0, column=3)
 Button(frame, text="-", height=3, width=7, font=20,
@@ -235,11 +233,11 @@ Button(frame, text="^", height=3, width=7, font=20,
 Button(frame, text=".", height=3, width=7, font=20,
        command=lambda: button_press('.')).grid(row=3, column=1)
 
-# ✅ --- Ton bouton ÉGAL est ici ---
+# Ton bouton ÉGAL est ici
 Button(frame, text="=", height=3, width=7, font=20,
        command=equals).grid(row=4, column=3, pady=5)
 
-# --- Ligne supplémentaire pour Fibo / Prime / Exp ---
+# Ligne supplémentaire pour Fibo / Prime / Exp
 extra_frame = Frame(window)
 extra_frame.pack(pady=10)
 
