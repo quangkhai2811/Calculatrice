@@ -118,6 +118,8 @@ print(n.prime())
         self.g = ouvrirFenetre(800, 600)
 
         self.g.actualiser()
+        self.g.attendreClic()
+
 
 machine = Calculatrice(1,2)
 print(machine.multiply())
